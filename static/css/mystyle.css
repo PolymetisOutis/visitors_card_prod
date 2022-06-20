@@ -247,10 +247,18 @@ html {
     margin-right: -6px;
 }
 
+.left-column {
+
+    float: left;
+    width: 30%; /* 要素の幅を50%に定義 */
+    background-color: #aaa; /* 視覚化のための背景色 */
+    
+}
+
 .right-column {
 
     float: right;
-    width: 53.4%; /* 要素の幅を50%に定義 */
+    width: 53.2%; /* 要素の幅を50%に定義 */
     background-color: #ddd; /* 視覚化のための背景色 */
 
 }
