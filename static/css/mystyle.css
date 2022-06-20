@@ -258,7 +258,7 @@ html {
 .right-column {
 
     float: right;
-    width: 53.2%; /* 要素の幅を50%に定義 */
+    width: 52.8%; /* 要素の幅を50%に定義 */
     background-color: #ddd; /* 視覚化のための背景色 */
 
 }
