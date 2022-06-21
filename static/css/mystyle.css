@@ -282,4 +282,10 @@ html {
     width: 6em;
 }
 
+.theme-label {
+    background-color:#999900;
+    color:white;
+    width: 6em;
+}
+
 }
