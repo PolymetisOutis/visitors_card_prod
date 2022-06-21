@@ -288,4 +288,11 @@ html {
     width: 6em;
 }
 
+.theme-label-textarea {
+    background-color:#999900;
+    color:white;
+    width: 6em;
+    height: 6.5em;
+}
+
 }
