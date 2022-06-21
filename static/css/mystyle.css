@@ -295,4 +295,9 @@ html {
     height: 6.5em;
 }
 
+.confirm-button {
+    background-color:rgb(135, 137, 6);
+    margin-left: 0px;
+}
+
 }
