@@ -63,12 +63,16 @@ background-color: #aaa; /* 視覚化のための背景色 */
 .right-column {
 
 float: right;
-width: 55.4%; /* 要素の幅を50%に定義 */
+width: 55.9%; /* 要素の幅を50%に定義 */
 background-color: #ddd; /* 視覚化のための背景色 */
 
 }
 
 
+.confirm-button {
+    background-color:rgb(135, 137, 6);
+    margin-left: 24px;
+}
 
 
 /* 主に管理者側の画面CSS */
