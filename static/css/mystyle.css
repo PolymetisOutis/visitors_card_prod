@@ -21,6 +21,12 @@
     color:white;
     width: 5.5em;
 }
+
+.theme-label-howmany {
+    background-color:#999900;
+    color:white;
+    width: 5.5em;
+}
   
 .theme-label-time {
     background-color:#999900;
@@ -269,4 +275,10 @@ html {
 }
 
     
+}
+
+.theme-label-howmany {
+    background-color:#999900;
+    color:white;
+    width: 6em;
 }
