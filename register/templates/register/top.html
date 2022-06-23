@@ -12,4 +12,9 @@
 <div class="container-fluid">
     <p><h3>ログアウトしました。</h3></p>
 </div>
+    <script>
+    setTimeout(function(){
+        window.location.href = '{% url 'register:login' %}';
+      }, 3*1000);
+    </script>
 {% endblock %}
