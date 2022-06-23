@@ -66,7 +66,7 @@ class Contact(models.Model):
 
     def __str__(self):
         if self.interviewer == None:
-            self.interviewer = Member.objects.get(id=9)
+            self.interviewer = Member.objects.get(name='ダミー')
             return str(self.contact.date) + ' / ' + self.contact.visitor_name  + ' / ' + self.interviewer.name
         else:
             return str(self.contact.date) + ' / ' + self.contact.visitor_name  + ' / ' + self.interviewer.name
