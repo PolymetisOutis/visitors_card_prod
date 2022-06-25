@@ -261,6 +261,8 @@ def sent_contact(request, pk):
         """
         if interviewer_post_name == "None":
             interviewer = None
+            visitor.is_contacted = True
+            visitor.save()
         else:
             interviewer = Member.objects.get(name=interviewer_name)
             visitor.is_contacted = True
