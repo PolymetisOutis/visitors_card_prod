@@ -260,7 +260,7 @@ def sent_contact(request, pk):
         もし名前を何も選ばずに担当者が登録したら
         """
         if interviewer_post_name == "None":
-            interviewer = None
+            interviewer = Member.objects.get(name='ダミー')
             visitor.is_contacted = True
             visitor.save()
         else:
