@@ -63,7 +63,7 @@ background-color: #aaa; /* 視覚化のための背景色 */
 .right-column {
 
 float: right;
-width: 56.8%; /* 要素の幅を50%に定義 */
+width: 55.8%; /* 要素の幅を50%に定義 */
 background-color: #ddd; /* 視覚化のための背景色 */
 
 }
