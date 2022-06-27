@@ -55,7 +55,7 @@
 .left-column {
 
 float: left;
-width: 10vw; /* 要素の幅を50%に定義 */
+width: 13vw; /* 要素の幅を50%に定義 */
 background-color: #aaa; /* 視覚化のための背景色 */
 
 }
@@ -63,7 +63,7 @@ background-color: #aaa; /* 視覚化のための背景色 */
 .right-column {
 
 float: right;
-width: 18.4vw; /* 要素の幅を50%に定義 */
+width: 20.4vw; /* 要素の幅を50%に定義 */
 background-color: #ddd; /* 視覚化のための背景色 */
 
 }
