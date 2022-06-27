@@ -8,14 +8,13 @@
 {% endblock %}
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
+  <div class="row">
           
     <h3>一括削除<span style="color: red;">*</span></h3>
     <h4>※下記登録内容を削除してもよろしいですか？※</h4>
       {% csrf_token %}
       <h3>来訪日時</h3>
-      {% comment %} <div class="box"> {% endcomment %}
-        <div class="row">
+      <div class="row">
         <div class="col" style="padding: 0; padding-left: 12px;">
           <div class="input-group">
             <div class="input-group-prepend">
@@ -33,7 +32,6 @@
           </div>
         </div>
       </div>
-      {% comment %} </div> {% endcomment %}
         <h3>来訪者</h3>
         <div class="input-group">
           <div class="input-group-prepend">
@@ -59,11 +57,9 @@
           </div>
         </div>
       </div>
-      </div>
       <h3>同行者</h3>
       {% if visitors.accompany1_name %}
       <div class="row" style="padding: 0; padding-right: 25px;">
-        {% comment %} <div class="accompany1"> {% endcomment %}
         <div class="col-8" style="padding: 0; padding-left: 12px;">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -80,12 +76,9 @@
             <div class="form-control">{{ visitors.accompany1_temp }}</div>
           </div>
         </div>
-        {% comment %} </div> {% endcomment %}
       </div>
       {% endif %}
       {% if visitors.accompany2_name %}
-        {% comment %} </div> {% endcomment %}
-        {% comment %} <div class="accompany2" style="display: none;"> {% endcomment %}
       <div class="row" style="padding: 0; padding-right: 25px;">
         <div class="col-8" style="padding: 0; padding-left: 12px;">
         <div class="input-group">
@@ -103,12 +96,9 @@
             <div class="form-control">{{ visitors.accompany2_temp }}</div>
           </div>
         </div>
-        </div>
       </div>
       {% endif %}
       {% if visitors.accompany3_name %}
-        {% comment %} </div> {% endcomment %}
-        {% comment %} <div class="accompany3" style="display: none;"> {% endcomment %}
       <div class="row" style="padding: 0; padding-right: 25px;">
         <div class="col-8" style="padding: 0; padding-left: 12px;">
         <div class="input-group">
@@ -126,7 +116,6 @@
             <div class="form-control">{{ visitors.accompany3_temp }}</div>
           </div>
         </div>
-        </div>
       </div>
       {% endif %}
       
@@ -139,11 +128,9 @@
         </div>
       
 
-        {% comment %} <div class="col-3" style="padding-left: 0px; padding-right: 0px"> {% endcomment %}
         <div class="left-column-contact">
           <div class="form-control">{{ visitors.position }}</div>
         </div>
-        {% comment %} <div class="col-7" style="padding-right: -12px;"> {% endcomment %}
         <div class="right-column-contact">
           <div class="form-control">{{ visitors.interviewer }}</div>
         </div>
@@ -162,7 +149,7 @@
       <div>
       <br>
       </div>
-    <div class="row">
+      <div class="row">
     
         <div class="col" style="padding: 0; padding-left: 12px;">
             <div class="input-group">
@@ -185,7 +172,6 @@
             <div class="theme-label-textarea-contact-edit form-control" rows="5">内容</div>
             </div>
             <div class="form-control">{{ visitors.contact.contents | linebreaksbr }}</div>
-            {% comment %} {{ visitors.contact.contents | linebreaksbr}} {% endcomment %}
         </div>
       {% endif %}
         <div>
@@ -197,6 +183,7 @@
         <button class="btn btn-primary btn-lg" style="background-color:#999900;" autofocus>更新</button>
         </div>
         </form>
+    </div>
   </div>
 </div>
 {% endblock %}
