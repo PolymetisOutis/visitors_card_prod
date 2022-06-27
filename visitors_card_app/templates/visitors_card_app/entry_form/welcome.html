@@ -283,31 +283,42 @@
           {% comment %} </div> {% endcomment %}
         <div class="row">
           <h3 class="h3-title">訪問先</h3>
-          <div class="input-group">
+            <!-- left-column/right-columnからcol指定に変更 -->
+            <!-- left-columnをcol-4指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-left: 12px;">
+            <div class="name-sp">
+            <div class="input-group">
 
-            <div class="input-group-prepend">
-              <div class="theme-label form-control">担当者</div>
-            </div>
-          
+                    <div class="input-group-prepend">
+                      <div class="theme-label form-control">担当者</div>
+                    </div>
+                  
 
-            {% comment %} <div class="col-3" style="padding-left: 0px; padding-right: 0px"> {% endcomment %}
-            <div class="left-column">
-              <select name="position" style="width: 100%;" class="form-control">
-                <option value="None" selected>選択してください</option>
-                <option value="代表">代表</option>
-                <option value="役員">役員</option>
-                <option value="人事">人事</option>
-                <option value="営業">営業</option>
-                <option value="事務">事務</option>
-                <option value="その他">その他</option>
-              </select>
+                    {% comment %} <div class="col-3" style="padding-left: 0px; padding-right: 0px"> {% endcomment %}
+                    {% comment %} <div class="left-column"> {% endcomment %}
+                      <select name="position" class="form-control">
+                        <option value="None" selected>選択してください</option>
+                        <option value="代表">代表</option>
+                        <option value="役員">役員</option>
+                        <option value="人事">人事</option>
+                        <option value="営業">営業</option>
+                        <option value="事務">事務</option>
+                        <option value="その他">その他</option>
+                      </select>
             </div>
+            </div>
+          </div>
             {% comment %} <div class="col-7" style="padding-right: -12px;"> {% endcomment %}
-            <div class="right-column">
-            <input name="interviewer" type="text" style="width: 100%;" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            <!-- right-columnをcol-8指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-right: 12px;">
+            <div class="temp-sp">
+                    {% comment %} <div class="right-column"> {% endcomment %}
+                    <input name="interviewer" type="text" style="width: 100%;" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                    {% comment %} </div> {% endcomment %}
             </div>
           </div>
 
+          
           <div class="input-group">
             <div class="input-group-prepend">
               <div class="theme-label-textarea form-control" rows="5">ご用件</div>
