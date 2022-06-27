@@ -30,11 +30,7 @@
   <div class="container-fluid">
     <div class="row">
 
-            {% comment %} <div>
-            {{msg}}<br><br>
-            </div> {% endcomment %}
             <h3>来訪日時</h3>
-            {% comment %} <div class="box"> {% endcomment %}
               <div class="col" style="padding: 0; padding-left: 12px;">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -51,7 +47,6 @@
                   <div class="form-control">{{ visitor.time }}</div>
                 </div>
               </div>
-            {% comment %} </div> {% endcomment %}
               <h3>来訪者</h3>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -75,10 +70,8 @@
                   <div class="form-control">{{ visitor.temperature }}</div>
                 </div>
               </div>
-            </div>
             {% if visitor.accompany1_name %}
             <div class="row" style="padding: 0;">
-              {% comment %} <div class="accompany1"> {% endcomment %}
               <div class="col-8" style="padding: 0; padding-left: 12px;">
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -95,12 +88,9 @@
                   <div class="form-control">{{ visitor.accompany1_temp }}</div>
                 </div>
               </div>
-              {% comment %} </div> {% endcomment %}
             </div>
             {% endif %}
             {% if visitor.accompany2_name %}
-              {% comment %} </div> {% endcomment %}
-              {% comment %} <div class="accompany2" style="display: none;"> {% endcomment %}
             <div class="row" style="padding: 0;">
               <div class="col-8" style="padding: 0; padding-left: 12px;">
               <div class="input-group">
@@ -118,12 +108,9 @@
                   <div class="form-control">{{ visitor.accompany2_temp }}</div>
                 </div>
               </div>
-              </div>
             </div>
             {% endif %}
             {% if visitor.accompany3_name %}
-              {% comment %} </div> {% endcomment %}
-              {% comment %} <div class="accompany3" style="display: none;"> {% endcomment %}
             <div class="row">
               <div class="col-8" style="padding: 0; padding-left: 12px;">
               <div class="input-group">
@@ -141,7 +128,6 @@
                   <div class="form-control">{{ visitor.accompany3_temp }}</div>
                 </div>
               </div>
-              </div>
             </div>
             {% endif %}
             
@@ -154,11 +140,9 @@
               </div>
             
   
-              {% comment %} <div class="col-3" style="padding-left: 0px; padding-right: 0px"> {% endcomment %}
               <div class="left-column-contact">
                 <div class="form-control">{{ visitor.position }}</div>
               </div>
-              {% comment %} <div class="col-7" style="padding-right: -12px;"> {% endcomment %}
               <div class="right-column-contact">
                 <div class="form-control">{{ visitor.interviewer }}</div>
               </div>
