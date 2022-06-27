@@ -148,6 +148,9 @@
             {% comment %} </div> {% endcomment %}
           <div class="row">
             <h3 >訪問先</h3>
+            <!-- left-column/right-columnからcol指定に変更 -->
+            <!-- left-columnをcol-4指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-left: 12px;">
             <div class="input-group">
   
               <div class="input-group-prepend">
@@ -156,14 +159,17 @@
             
   
               {% comment %} <div class="col-3" style="padding-left: 0px; padding-right: 0px"> {% endcomment %}
-              <div class="left-column">
+              {% comment %} <div class="left-column"> {% endcomment %}
                 {% render_field  form.position  class="form-control" %}
-              </div>
-              {% comment %} <div class="col-7" style="padding-right: -12px;"> {% endcomment %}
-              <div class="right-column-edit">
-                {% render_field  form.interviewer  class="form-control" %}
-              </div>
+              {% comment %} </div> {% endcomment %}
             </div>
+          </div>
+          <!-- right-columnをcol-8指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-right: 12px;">
+              {% comment %} <div class="col-7" style="padding-right: -12px;"> {% endcomment %}
+              {% comment %} <div class="right-column-edit"> {% endcomment %}
+                {% render_field  form.interviewer  class="form-control" %}
+              {% comment %} </div> {% endcomment %}
           </div>
   
             <div class="input-group">
