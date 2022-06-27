@@ -132,6 +132,9 @@
         </div>
         <div class="row">
             <h3>訪問先</h3>
+            <!-- left-column/right-columnからcol指定に変更 -->
+            <!-- left-columnをcol-4指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-left: 12px;">
             <div class="input-group">
   
               <div class="input-group-prepend">
@@ -139,13 +142,17 @@
               </div>
             
   
-              <div class="left-column-contact">
+              {% comment %} <div class="left-column-contact"> {% endcomment %}
                 <div class="form-control">　{{ visitor.position }}</div>
-              </div>
-              <div class="right-column-contact">
-                <div class="form-control">　{{ visitor.interviewer }}</div>
-              </div>
+              {% comment %} </div> {% endcomment %}
             </div>
+          </div>
+          <!-- right-columnをcol-8指定に変更 -->
+          <div class="col-6" style="padding: 0; padding-right: 12px;">
+              {% comment %} <div class="right-column-contact"> {% endcomment %}
+                <div class="form-control">　{{ visitor.interviewer }}</div>
+              {% comment %} </div> {% endcomment %}
+          </div>
   
             <div class="input-group">
               <div class="input-group-prepend">
