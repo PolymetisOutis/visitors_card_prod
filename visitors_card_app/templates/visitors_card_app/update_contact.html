@@ -125,7 +125,7 @@
               </div>
             {% endif %}
             
-        <div class="row">
+        {% comment %} <div class="row"> {% endcomment %}
             <h3>訪問先</h3>
             <!-- left-column/right-columnからcol指定に変更 -->
             <!-- left-columnをcol-4指定に変更 -->
@@ -155,7 +155,7 @@
               </div>
               <div class="form-control">{{ visitor.content | linebreaksbr }}</div>
             </div>
-        </div>
+        {% comment %} </div> {% endcomment %}
 
 
         <h3>担当者記入欄<span style="color: red;">*</span></h3>
