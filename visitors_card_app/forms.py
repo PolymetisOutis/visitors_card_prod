@@ -2,7 +2,8 @@ from django import forms
 from .models import *
 
 class MemberForm(forms.Form):
-    member = forms.ModelChoiceField(Member.objects,  label='', empty_label='選択してください', to_field_name='name', required=False)
+    member = forms.ModelChoiceField(Member.objects,  label='', empty_label='選択してください', to_field_name='name', required=False, 
+                                    widget=forms.Select(attrs={'class': 'form-control'}))
 
 TEMPERATURE_CHOICES = (
 
